@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>Quét QR CCCD</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://unpkg.com/html5-qrcode"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Quét QR CCCD</h2>
+
+<div id="reader"></div>
+
+<div class="card">
+
+<label>Số CCCD</label>
+<input id="cccd" readonly>
+
+<label>Số CMND</label>
+<input id="cmnd" readonly>
+
+<label>Họ tên</label>
+<input id="name" readonly>
+
+<label>Ngày sinh</label>
+<input id="birthday" readonly>
+
+<label>Giới tính</label>
+<input id="gender" readonly>
+
+<label>Địa chỉ</label>
+<textarea id="address" readonly></textarea>
+
+<label>Ngày cấp</label>
+<input id="issueDate" readonly>
+
+<button onclick="copyAll()">
+
+📋 Copy tất cả
+
+</button>
+
+</div>
+
+</div>
+
+<script src="parser.js"></script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
